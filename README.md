@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="MIRMI" src="./media/TUM_mirmi.png" height="80">
+    <img alt="MIRMI" src="./.media/TUM_mirmi.png" height="80">
 </p>
 
 # DoDo Alive! Project WS25
