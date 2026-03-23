@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug imu_node",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/install/dodo_imu/lib/dodo_imu/imu_node",
+      "args": [
+        "--ros-args",
+        "-p", "dummy_mode:=false"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "externalConsole": false,
+     "environment": [
+  {
+    "name": "AMENT_PREFIX_PATH",
+    "value": "${workspaceFolder}/install"
+  },
+  {
+    "name": "LD_LIBRARY_PATH",
+    "value": "${workspaceFolder}/install/dodo_msgs/lib:${workspaceFolder}/install/dodo_monitor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib"
+  },
+  {
+    "name": "DISPLAY",
+    "value": ":0"
+  },
+  {
+    "name": "QT_QPA_PLATFORM_PLUGIN_PATH",
+    "value": "/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms"
+  },
+  {
+    "name": "LD_PRELOAD",
+    "value": "/lib/aarch64-linux-gnu/libpthread.so.0"
+  }
+],
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
+
+  
