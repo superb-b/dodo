@@ -1,0 +1,10 @@
+string can_if
+int32 motor_id
+string motor_type
+float64 position
+float64 velocity
+float64 torque
+uint32 active_errors
+int32 axis_state
+int32 procedure_result
+bool trajectory_done
